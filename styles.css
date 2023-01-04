@@ -50,28 +50,46 @@ nav li {
 }
 
 main {
+  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   height: 45vh;
+  margin-bottom: 20px;
 }
 
 .hero {
+  border-color: white;
+  width: 70vw;
+  height: 37vh;
+  padding: 1.25rem;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0 0 1.25rem 0;
+}
+
+.hero p {
+  font-size: 1.81rem;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
   border-color: white;
   border: 1px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.25rem;
   width: 70vw;
-  height: 50vh;
-  padding: 1.25rem;
-  text-align: left;
-  /* align-self: center; */
+  padding: 1rem;
 }
 
-.hero h1 {
-  font-size: 2rem;
-  margin: 0 0 1.25rem 0;
+.products img {
+  max-height: 381px;
+  max-width: 417px;
 }
 
 footer {
