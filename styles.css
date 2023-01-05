@@ -92,6 +92,30 @@ main {
   max-width: 417px;
 }
 
+.employee-profiles {
+  display: flex; /* use flexbox layout for the employee profiles */
+  flex-wrap: wrap; /* allow the employee profiles to wrap onto multiple lines */
+  margin: 0 -10px; /* add negative margin to the left and right sides of the employee profiles */
+}
+
+.employee {
+  width: 33.333%; /* set the width of each employee profile to 33.333% of the container */
+  margin: 0 10px 10px 0; /* add 10px of space on the right and bottom sides of each employee profile */
+}
+
+.employee img {
+  width: 100%; /* set the width of the images to 100% */
+}
+
+.employee h3 {
+  font-size: 1.2em;
+  margin: 10px 0 5px 0;
+}
+
+.employee p {
+  font-size: 0.9em;
+}
+
 footer {
   background-color: #333;
   color: white;
