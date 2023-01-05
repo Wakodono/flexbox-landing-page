@@ -30,6 +30,7 @@ header {
   color: white;
   padding: 1.25rem;
   margin-bottom: 1.25rem;
+  min-width: 100%;
 }
 
 .logo {
@@ -50,13 +51,11 @@ nav li {
 }
 
 main {
-  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  height: 45vh;
-  margin-bottom: 20px;
+  min-height: 100%;
 }
 
 .hero {
@@ -95,16 +94,21 @@ main {
 .employee-profiles {
   display: flex; /* use flexbox layout for the employee profiles */
   flex-wrap: wrap; /* allow the employee profiles to wrap onto multiple lines */
+  justify-content: center;
+  justify-content: space-between;
   margin: 0 -10px; /* add negative margin to the left and right sides of the employee profiles */
 }
 
 .employee {
-  width: 33.333%; /* set the width of each employee profile to 33.333% of the container */
+  width: 30%; /* set the width of each employee profile to 33.333% of the container */
   margin: 0 10px 10px 0; /* add 10px of space on the right and bottom sides of each employee profile */
 }
 
 .employee img {
-  width: 100%; /* set the width of the images to 100% */
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: auto;
 }
 
 .employee h3 {
@@ -114,17 +118,15 @@ main {
 
 .employee p {
   font-size: 0.9em;
+  max-width: 300px;
 }
 
 footer {
+  display: flex;
   background-color: #333;
   color: white;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
 }
